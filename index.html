@@ -4,11 +4,11 @@
   <title>Bootstrap Example</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="bootstrap.css">
+
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-  <script type="text/javascript" src="data01.json"></script>
   <script src="projects.js"></script>
   <style>
     /* Set height of the grid so .sidenav can be 100% (adjust if needed) */
@@ -42,39 +42,34 @@
 <div class="container">
  <div class="row content">
     <div class="col-sm-12">
-      <h4>Vanilla JS Projects</h4>
-      
-        <button onclick="project_show('01')" type="button" class="btn btn-success">Random Motivational Quotes</button>
-        <button onclick="project_show('02')" type="button" class="btn btn-success">ToDO</button>
+      <br>
+
+      <h2>Vanilla JS Projects</h2>
+        <br>
+        <button onclick="project_show('01')" type="button" class="btn btn-primary">Random Motivational Quotes</button>
+        <button onclick="project_show('02')" type="button" class="btn btn-primary">ToDO</button>
         
      
         <br>
         <br>
-      <div id="01" style="display: none"> 
+      <div class="container-fluid" id="01" style="display: none"> 
         <hr>  
-        <button onclick="motivational_quotes_fetch()" type="button" class="btn btn-info">Motivate Me</button>
           <br>
-          <div class="card text-white bg-dark mb-3" style="max-width: 18rem;">
-            <br>
+          <div class="card border-info mb-6" >
+            
+            <h5 id="from" class="card-header">Press Motivate Me</h5>
             <div class="card-body">
-              <h5 id="from" class="card-title">Press Motivate Me</h5>
+              
               <p id="text" class="card-text">Did you press motivation button?</p>
             </div>
           </div>
+          <br>
+          <button onclick="motivational_quotes_fetch()" type="button" class="btn btn-outline-danger col-sm-3" style="align-self: center;">Motivate Me</button>
     </div>
     <br>
-    <br>
     <div id="02" style="display: none"> 
-        <hr>
-        <button  type="button" class="btn btn-info">Motivate Me</button>
-        <br>
-        <div class="card text-white bg-dark mb-3" style="max-width: 18rem;">
-          <br>
-          <div class="card-body">
-            <h5 class="card-title">This is 02</h5>
-            <p class="card-text">02</p>
-          </div>
-        </div>
+      <a class="btn btn-info" href="#">Register</a>
+      <a class="btn btn-default" href="#">Login</a>
   </div>
 </div>
 </div>
