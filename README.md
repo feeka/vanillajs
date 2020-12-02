@@ -21,13 +21,12 @@ No special treatment for installation needed.
 * Done.
 
 
-## Authors
-
-Contributors names and contact info
+## Author
 
 Fikrat Talibli
-[@tvebb](https://twitter.com/tvebb)
-[email](fikrattalibli@gmail.com)
+
+* [@tvebb](https://twitter.com/tvebb)
+* [email](fikrattalibli@gmail.com)
 
 ## Version History
 
