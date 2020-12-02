@@ -31,7 +31,7 @@ Alternatively there is website hosted by my github account.
 Fikrat Talibli
 
 * [@tvebb](https://twitter.com/tvebb)
-* [@email](fikrattalibli@gmail.com)
+* fikrattalibli@gmail.com
 
 ## Version History
 
