@@ -20,13 +20,18 @@ No special treatment for installation needed.
 * Open ```.html``` file.
 * Done.
 
+### Alternative execution
+
+Alternatively there is website hosted by my github account.
+
+* Go to [@this_site](https://feeka.github.io/vanillajs/).
 
 ## Author
 
 Fikrat Talibli
 
 * [@tvebb](https://twitter.com/tvebb)
-* [email](fikrattalibli@gmail.com)
+* [@email](fikrattalibli@gmail.com)
 
 ## Version History
 
