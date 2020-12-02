@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="data01.json"></script>
+  <script src="projects.js"></script>
+  <style>
+    /* Set height of the grid so .sidenav can be 100% (adjust if needed) */
+    .row.content {height: 1500px}
+    
+    /* Set gray background color and 100% height */
+    .sidenav {
+      background-color: #f1f1f1;
+      height: 100%;
+    }
+    
+    /* Set black background color, white text and some padding */
+    footer {
+      background-color: #555;
+      color: white;
+      padding: 15px;
+    }
+    
+    /* On small screens, set height to 'auto' for sidenav and grid */
+    @media screen and (max-width: 767px) {
+      .sidenav {
+        height: auto;
+        padding: 15px;
+      }
+      .row.content {height: auto;} 
+    }
+  </style>
+</head>
+<body>
+
+<div class="container">
+ <div class="row content">
+    <div class="col-sm-12">
+      <h4>Vanilla JS Projects</h4>
+      
+        <button onclick="project_show('01')" type="button" class="btn btn-success">Random Motivational Quotes</button>
+        <button onclick="project_show('02')" type="button" class="btn btn-success">ToDO</button>
+        
+     
+        <br>
+        <br>
+      <div id="01" style="display: none"> 
+        <hr>  
+        <button onclick="motivational_quotes_fetch()" type="button" class="btn btn-info">Motivate Me</button>
+          <br>
+          <div class="card text-white bg-dark mb-3" style="max-width: 18rem;">
+            <br>
+            <div class="card-body">
+              <h5 id="from" class="card-title">Press Motivate Me</h5>
+              <p id="text" class="card-text">Did you press motivation button?</p>
+            </div>
+          </div>
+    </div>
+    <br>
+    <br>
+    <div id="02" style="display: none"> 
+        <hr>
+        <button  type="button" class="btn btn-info">Motivate Me</button>
+        <br>
+        <div class="card text-white bg-dark mb-3" style="max-width: 18rem;">
+          <br>
+          <div class="card-body">
+            <h5 class="card-title">This is 02</h5>
+            <p class="card-text">02</p>
+          </div>
+        </div>
+  </div>
+</div>
+</div>
+</div>
+<footer class="container-fluid">
+  <p>Footer Text</p>
+</footer>
+
+</body>
+</html>
